@@ -1,3 +1,6 @@
+RUN pip install --index-url https://pypi.douban.com/simple --default-timeout=100 --no-cache-dir -r /code/requirements.txt
+docker build -t text_understanding_api .
+
 curl -X GET '192.168.252.1:8090'
 
 kws_type:1 粗粒度分词 kws_type:0 细粒度分词
